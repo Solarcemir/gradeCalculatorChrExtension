@@ -1,0 +1,58 @@
+html, body { width: 750px; height: 550px; margin: 0; padding: 0; overflow: hidden; }
+body { background: #2c2f33; color: #fff; font-family: 'Inter', sans-serif; }
+.main-div { display: flex; justify-content: center; align-items: flex-start; background: #23272a; padding: 10px; border-radius: 8px; width: 100%; height: 100%; box-shadow: 0 2px 8px rgba(142, 91, 226, 0.2); border: 1px solid #40444b; }
+.main-container { padding: 10px; border: 1px solid #40444b; border-radius: 8px; background: #2e3136; text-align: left; width: 100%; height: 100%; overflow-y: auto; }
+h1 { text-align: center; margin-bottom: 8px; font-size: 1.4rem; font-weight: 700; color: #8e5be2; }
+h2 { font-size: 1.1rem; margin-bottom: 6px; color: #fff; font-weight: 600; }
+h3 { font-size: 0.8rem; font-weight: 500; color: #99aab5; }
+form { display: flex; flex-direction: column; gap: 8px; }
+.form-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.adding { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.adding label { font-size: 0.8rem; color: #fff; }
+.adding input[type="text"], .adding input[type="number"] { width: 120px; padding: 6px; background: #363a40; border: 1px solid #40444b; border-radius: 4px; color: #fff; font-size: 0.8rem; }
+.adding input[type="text"]:focus, .adding input[type="number"]:focus { border-color: #8e5be2; box-shadow: 0 0 4px rgba(142, 91, 226, 0.3); }
+.adding input[type="number"] { width: 50px; }
+.input-group { display: flex; align-items: center; gap: 6px; }
+#add-course-btn { background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; border: none; border-radius: 4px; padding: 6px 10px; cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+#add-course-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(142, 91, 226, 0.4); background: linear-gradient(90deg, #a375e7, #ff73fa); }
+.chart-container { width: 150px; height: 150px; background: #363a40; border: 1px solid #40444b; border-radius: 4px; padding: 4px; }
+#courses-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.course-link { background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+.course-link:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(142, 91, 226, 0.4); background: linear-gradient(90deg, #a375e7, #ff73fa); }
+.course-section { display: none; max-height: 250px; overflow-y: auto; }
+.course-section.active { display: block; }
+.main-info { display: grid; grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr; text-align: center; font-weight: 600; gap: 4px; margin-top: 8px; padding-bottom: 4px; border-bottom: 1px solid #40444b; }
+.course-item { display: grid; grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr; gap: 4px; margin-top: 4px; }
+.course-item input { width: 100%; height: 20px; padding: 4px; background: #363a40; border: 1px solid #40444b; border-radius: 3px; color: #fff; font-size: 0.7rem; }
+.course-item input:focus { border-color: #8e5be2; box-shadow: 0 0 4px rgba(142, 91, 226, 0.3); }
+.course-item input[readonly] { background: #3e4349; border-color: #3e4349; color: #99aab5; }
+.add-item-btn { background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; margin: 8px 0; font-size: 0.7rem; }
+.add-item-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(142, 91, 226, 0.4); background: linear-gradient(90deg, #a375e7, #ff73fa); }
+.calculations { display: grid; grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr; text-align: center; font-weight: 600; gap: 4px; margin: 10px 0 6px; border-bottom: 1px solid #40444b; }
+.calculation-values { display: grid; grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr; gap: 4px; text-align: center; }
+.value-box { padding: 4px; background: #363a40; border: 1px solid #40444b; border-radius: 3px; font-size: 0.7rem; width: 60px; color: #fff; }
+.current-mark { font-size: 0.8rem; background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; padding: 4px; text-align: center; width: 80px; border-radius: 3px; font-weight: 600; }
+.final-grade { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 0.7rem; width: 60%; padding: 6px; }
+.final-grade h3 { color: #fff; }
+.final-grade div { padding: 4px; background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; border-radius: 3px; width: 60px; text-align: center; font-size: 0.8rem; }
+.final-calculations { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; font-size: 0.7rem; width: 60%; padding: 6px; }
+.final-calculations div { display: flex; align-items: center; gap: 8px; }
+.final-calculations div h3 { color: #fff; }
+.final-calculations div div { padding: 4px; background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; border-radius: 3px; width: 60px; text-align: center; }
+.remove-course-btn { background: linear-gradient(90deg, #8e5be2, #a375e7); color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; margin-top: 8px; font-size: 0.8rem; }
+.remove-course-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(142, 91, 226, 0.4); background: linear-gradient(90deg, #a375e7, #ff73fa); }
+.modes-btn { background: linear-gradient(90deg, #8d7ea7, #a375e7); color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; margin: 8px 20px 0 0; font-size: 0.8rem; }
+.modes-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(142, 91, 226, 0.4); background: linear-gradient(90deg, #a375e7, #ff73fa); }
+.extra-content { position: absolute; bottom: 20px; right: 20px; width: 120px; height: 120px; background: #1469e900; border-radius: 4px; padding: 4px; color: #fff; display: flex; flex-direction: column; gap: 4px; z-index: 10; }
+.extra-content h3 { font-size: 0.7rem; font-weight: 500; color: #94d0f8; text-align: center; }
+.extra-content img { width: 110px; height: 110px; object-fit: contain; }
+body.light-mode { background: #f0f0f0; color: #333; }
+body.light-mode .main-div { background: #fff; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+body.light-mode .main-container { background: #f9f9f9; border: 1px solid #ccc; }
+body.light-mode h1 { color: #6200ff; }
+body.light-mode h2, body.light-mode h3, body.light-mode .adding label { color: #333; }
+body.light-mode .adding input[type="text"], body.light-mode .adding input[type="number"], body.light-mode .course-item input, body.light-mode .value-box { background: #fff; border-color: #ccc; color: #333; }
+body.light-mode .course-item input[readonly] { background: #e9e9e9; border-color: #ccc; color: #666; }
+body.light-mode .chart-container { background: #fff; border-color: #ccc; }
+body.light-mode .current-mark, body.light-mode .final-grade div, body.light-mode .final-calculations div div, body.light-mode #add-course-btn, body.light-mode .course-link, body.light-mode .add-item-btn, body.light-mode .remove-course-btn, body.light-mode .modes-btn { background: linear-gradient(90deg, #6b3eb7, #8e5be2); }
+body.light-mode .current-mark:hover, body.light-mode .final-grade div:hover, body.light-mode .final-calculations div div:hover, body.light-mode #add-course-btn:hover, body.light-mode .course-link:hover, body.light-mode .add-item-btn:hover, body.light-mode .remove-course-btn:hover, body.light-mode .modes-btn:hover { background: linear-gradient(90deg, #8e5be2, #a375e7); }
