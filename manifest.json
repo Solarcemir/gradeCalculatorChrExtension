@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Grade Calculator",
   "version": "1.0",
-  "description": "A tool to calculate and manage course grades with theme toggling.",
+  "description": "A tool to calculate and manage course grades with theme toggling and visual feedback.",
   "action": {
     "default_popup": "index.html"
   },
@@ -17,5 +17,10 @@
   ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }
