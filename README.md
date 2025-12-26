@@ -123,7 +123,7 @@ This extension respects your privacy:
 - **No third-party services**: No external services or analytics
 - **No tracking**: Your grades and course information stay private
 
-For more details, see the [Privacy Policy](privacy%20policy.html).
+For more details, see the Privacy Policy (privacy policy.html).
 
 ## 💡 Tips
 
